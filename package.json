@@ -1,0 +1,16 @@
+{
+  "name": "docker-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docker_gulp": "docker run --rm -it -v %cd%/src:/app/src -v %cd%/dist:/app/dist -p 3000:3000 webteam/gulp gulp",
+    "docker_gulp_styles": "docker run --rm -it -v %cd%/src:/app/src -v %cd%/dist:/app/dist webteam/gulp gulp styles",
+    "docker_gulp_scripts": "docker run --rm -it -v %cd%/src:/app/src -v %cd%/dist:/app/dist webteam/gulp gulp scriptsDev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
